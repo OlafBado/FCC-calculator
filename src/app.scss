@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+$button: #4d4d4d;
+$white: white;
+$operator: #666666;
+$delete: #ac3939;
+$equal: rgb(1 68 102);
+$font-display: 'Orbitron', sans-serif;
+$wrapper: black;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: $white;
+}
+
+.wrapper {
+    background-color: $wrapper;
+    padding: 0.25rem;
+    width: 320px;
+}
+
+#display,
+#formula {
+    font-family: $font-display;
+    text-align: right;
+}
+#formula {
+    color: orange;
+    min-height: 20px;
+}
+
+#display {
+    font-size: 2rem;
+}
+
+button {
+    height: 65px;
+    width: 80px;
+    background: $button;
+    color: $white;
+    font-size: 1.25rem;
+    border: none;
+    outline: 1px solid black;
+    box-sizing: border-box;
+    position: relative;
+}
+
+button:hover {
+    color: black;
+    outline: 0.05em solid grey;
+    z-index: 3;
+}
+
+#clear,
+#zero {
+    width: 160px;
+}
+
+#clear {
+    background: $delete;
+}
+
+#equals {
+    height: 130px;
+    position: absolute;
+    background-color: $equal;
+}
